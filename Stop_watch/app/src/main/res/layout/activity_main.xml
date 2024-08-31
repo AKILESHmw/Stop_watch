@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/kanit_black"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:layout_below="@id/clock">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/reset"
+            app:icon="@drawable/baseline_refresh_24"
+            android:text="Reset"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_black"
+            app:backgroundTint="#D70606"
+            app:iconTint="@color/icon_color"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/start"
+            android:text="Start"
+            android:layout_marginStart="5sp"
+            android:layout_marginEnd="5sp"
+            android:textColor="@color/white"
+            app:icon="@drawable/baseline_play_arrow_24"
+            android:layout_weight="1"
+            app:backgroundTint="#D70606"
+            android:fontFamily="@font/roboto_black"
+            app:iconTint="@color/icon_color"/>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/stop"
+            android:text="Stop"
+            android:enabled="false"
+            app:icon="@drawable/baseline_stop_24"
+            android:layout_weight="1"
+            app:backgroundTint="#D70606"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_black"
+            app:iconTint="@color/icon_color"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
